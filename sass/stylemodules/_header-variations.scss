@@ -1,0 +1,33 @@
+// Header Styles Magor 
+#module-styles-1 {
+    .site-title {
+        max-width: 450px;
+        @include box-shadow($args2a);
+        margin-bottom: 40px;
+        border-radius: 4px;
+    }
+    .header-picture #header-image {
+        @include box-shadow($args1);
+    }
+}
+// Header Styles Monochrome
+#module-styles-2 {
+    .site-title {
+        max-width: 450px;
+        border: 1px solid $ltgrey;
+        background: linear-gradient(to right,darken($base-col,20),lighten($base-col,20)); 
+        padding: 5px 0;
+        margin-bottom: 40px;
+        #title-branding{
+             a {
+                display: inline-block;
+                @include gradient-horiz(darken($base-col,20),lighten($base-col,20));
+                 h1{
+                    background-color: white;
+                    color: darken($base-col,20);
+                    mix-blend-mode: lighten;
+                 }
+            }
+        }
+    }
+}

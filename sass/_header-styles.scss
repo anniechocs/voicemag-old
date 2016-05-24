@@ -1,0 +1,60 @@
+/************ HEADER   ****************/
+.page-container > header {
+    background-color:$vltgrey;
+    margin: 0;
+    margin: 20px -15px;
+    padding: 0 10px;
+}
+
+.site-branding > div {
+    margin-top: 0;
+}
+
+#title-branding {
+    max-width: 450px;
+    background-color:white;
+    padding: 15px;
+    margin: 0;
+    h1 {
+        color: $base-col;
+    }
+    h1 a:hover, h1 a:focus {
+        color: $base-col;
+        text-decoration: none;
+    }
+.site-description {
+    padding-top: 5px;
+    color: $base-col;
+   // font-style: italic;
+    font-size: 1.1em;
+    } 
+}
+
+//#main-header .site-branding {
+.site-branding {
+    margin-top: 2%;
+    margin-bottom: 10px;
+}
+
+
+div#search-2.widget.widget_search {
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.header-picture {
+    padding-right: 0;
+ #header-image {
+    margin: 10px 0 -10px 0;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+}
+}
+
+#banner-container {
+    overflow: hidden;
+    #banner{
+        width: 100%;
+    }
+}
