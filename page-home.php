@@ -106,32 +106,9 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 			<div class="row flex-row">	
 
 			<?php 
-				$args1 = array(
-					'posts_per_page'=>2,
-				'post_type'=>'event',
-				'order'=>'ASC',
-				'event-categories' => 'front-page',
-				'meta_query' => array(
-									array(
-									//	'key' => '_start_ts', change this to display until end-time
-										'key' => '_end_ts',
-										'value' => current_time('timestamp'),
-										'compare' => '>=',
-										'type'=>'numeric'
-									)
-								),
-
-				'orderby' => 'meta_value_num',
-				'order' => 'ASC',
-				//'meta_key' => '_start_ts', // change this to display until end-time
-				'meta_key' => '_end_ts',
-				'meta_value' => current_time('timestamp'),
-				'meta_value_num' => current_time('timestamp'),
-				'meta_compare' => '>='
-				);
 
 				$args2 = array(
-					'posts_per_page'=>6,
+					'posts_per_page'=>9,
 				'post_type'=>'event',
 				'order'=>'ASC',
 				'event-categories' => 'front-page',
