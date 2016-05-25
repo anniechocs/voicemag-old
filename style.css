@@ -1240,8 +1240,8 @@ div#search-2.widget.widget_search {
   border: 0 solid #eee; }
 
 /*************** P O S T S ****************/
-/* Don't show meta data on posts */
-.entry-meta, .entry-meta-category-tag {
+/* Don't show meta data on posts or comments*/
+.entry-meta, .entry-meta-category-tag, #comments {
   display: none; }
 
 /*************  CATEGORY (archive) PAGES ***********/
