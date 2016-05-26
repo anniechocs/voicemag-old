@@ -36,7 +36,9 @@
 	               
 	                		while ( $query2->have_posts() ) {
 										$query2->the_post();
-										if ( in_array( $post->ID, $do_not_duplicate ) ) continue;
+										if (isset($do_not_duplicate)) {
+											if ( in_array( $post->ID, $do_not_duplicate ) ) continue;
+										}
 										$EM_Event = em_get_event($post->ID, 'post_id');
 										?>
 

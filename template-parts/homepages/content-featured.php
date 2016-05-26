@@ -2,7 +2,7 @@
 		<!-- Optional row of featured posts for home page-->		
 
 
-			<div class="row flex-row">	
+			<div class="row flex-row">
 
 
 			<?php 							
@@ -28,6 +28,8 @@
 				'meta_value' => current_time('timestamp'),
 				'meta_value_num' => current_time('timestamp'),
 				'meta_compare' => '>='
+
+				//$do_not_duplicate = array();
 				); ?>
 
 				               <?php $query1 = new WP_Query( $args1);		

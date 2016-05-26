@@ -17,8 +17,8 @@
 		?>
 
 		<!--optional row of featured posts -->
-			<?php //get_template_part( 'template-parts/homepages/content', 'featured' );
-			//	echo "\n\n"; ?>
+			<?php get_template_part( 'template-parts/homepages/content', 'featured' );
+				echo "\n\n"; ?>
 
 		<!--the main posts -->		
 
