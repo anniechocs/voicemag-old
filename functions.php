@@ -46,12 +46,8 @@ if (!function_exists('bootstrapBasicGetMainColumnSize')) {
 	}// bootstrapBasicGetMainColumnSize
 }
 
+function register_new_menu() {
+  register_nav_menu('whats-on',__( 'Whats On' ));
+}
+add_action( 'init', 'register_new_menu' );
 
-// function voicemag_image_orientation($image) {
-// list($width, $height) = getimagesize('image.jpg');
-// if ($width > $height) {
-//     // Landscape
-// } else {
-//     // Portrait or Square
-// }
-// }

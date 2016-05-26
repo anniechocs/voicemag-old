@@ -909,7 +909,7 @@ nav#graded-style .navbar-header {
 #title-branding {
   max-width: 450px;
   background-color: white;
-  padding: 15px;
+  padding: 0;
   margin: 0; }
   #title-branding h1 {
     color: #678234; }
@@ -920,6 +920,36 @@ nav#graded-style .navbar-header {
     padding-top: 5px;
     color: #678234;
     font-size: 1.1em; }
+
+.whats-on-menu ul {
+  margin-left: 0;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+.whats-on-menu li {
+  list-style: none;
+  padding: 2px;
+  display: inline-block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 180px;
+  -ms-flex: 1 1 180px;
+  flex: 1 1 180px; }
+  .whats-on-menu li a {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 10px;
+    border: #eee solid 1px;
+    border-radius: 6px;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f8f8f8));
+    background: -webkit-linear-gradient(top, white, #f8f8f8);
+    background: linear-gradient(to bottom, white, #f8f8f8); }
 
 .site-branding {
   margin-top: 2%;
