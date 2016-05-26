@@ -53,13 +53,9 @@
 
 				<div class="col-sm-8" id="banner-container">
 					<img id="banner" src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner.jpg" alt="photo of the Wye valley" width="100%">
-				</div><!-- banner -->
 
-		</div> <!-- end header container .row -->
 
-		<div class="row main-navigation">
-		<div class="col-xs-12">
-			<nav class="navbar navbar-default" role="navigation">
+						<nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
 					
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
@@ -79,7 +75,14 @@
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?> 
 					<?php dynamic_sidebar('navbar-right'); ?> 
 				</div><!--.navbar-collapse-->
-			</nav>
+			</nav>		
+				</div><!-- banner -->
+
+		</div> <!-- end header container .row -->
+
+		<div class="row main-navigation">
+		<div class="col-xs-12">
+
 		</div>
 	</div><!--.main-navigation-->
 

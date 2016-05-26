@@ -70,6 +70,12 @@
         // mobile device navbar     
      button.navbar-toggle {
         @include menu-button;
+                     #menu-btn-left {
+            float:left;
+            h2{
+                color: white;
+            }
+         }
         //color: $base-col;
          color: white;
          &:focus, &:hover{

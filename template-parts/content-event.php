@@ -28,7 +28,7 @@
 
 				<?php echo $EM_Event->output('#_EVENTNOTES'); ?> 
 
-		  	<div class="flex-img-holder">
+		  	<div class="map-holder">
 				<?php echo $EM_Event->output('#_LOCATIONMAP'); ?> 
 			</div>
 

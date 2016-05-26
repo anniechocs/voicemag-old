@@ -35,7 +35,10 @@
 }
 
 /**************** IMAGES ***************/
-
+img {
+    max-width: 100%;
+            height: auto;
+}
 .card-thmb{
     width: 100%;
     max-width: 300px;

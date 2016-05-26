@@ -139,6 +139,10 @@ table, th, td {
   background-color: white; }
 
 /**************** IMAGES ***************/
+img {
+  max-width: 100%;
+  height: auto; }
+
 .card-thmb {
   width: 100%;
   max-width: 300px; }
@@ -484,6 +488,10 @@ nav.navbar-default {
       margin: 5px; }
     nav.navbar-default button.navbar-toggle .icon-bar {
       background-color: #999; }
+    nav.navbar-default button.navbar-toggle #menu-btn-left {
+      float: left; }
+      nav.navbar-default button.navbar-toggle #menu-btn-left h2 {
+        color: white; }
     nav.navbar-default button.navbar-toggle:focus, nav.navbar-default button.navbar-toggle:hover {
       background-color: #8db147; }
 nav .navbar-collapse {
@@ -559,6 +567,10 @@ nav#reset-style.navbar-default {
       margin: 5px; }
     nav#reset-style.navbar-default button.navbar-toggle .icon-bar {
       background-color: #999; }
+    nav#reset-style.navbar-default button.navbar-toggle #menu-btn-left {
+      float: left; }
+      nav#reset-style.navbar-default button.navbar-toggle #menu-btn-left h2 {
+        color: white; }
     nav#reset-style.navbar-default button.navbar-toggle:focus, nav#reset-style.navbar-default button.navbar-toggle:hover {
       background-color: #8db147; }
 
@@ -610,6 +622,10 @@ nav#magor-style.navbar-default {
       margin: 5px; }
     nav#magor-style.navbar-default button.navbar-toggle .icon-bar {
       background-color: #999; }
+    nav#magor-style.navbar-default button.navbar-toggle #menu-btn-left {
+      float: left; }
+      nav#magor-style.navbar-default button.navbar-toggle #menu-btn-left h2 {
+        color: white; }
     nav#magor-style.navbar-default button.navbar-toggle:focus, nav#magor-style.navbar-default button.navbar-toggle:hover {
       background-color: #8db147; }
 
@@ -719,6 +735,10 @@ nav#mono-style.navbar-default {
       margin: 5px; }
     nav#mono-style.navbar-default button.navbar-toggle .icon-bar {
       background-color: #999; }
+    nav#mono-style.navbar-default button.navbar-toggle #menu-btn-left {
+      float: left; }
+      nav#mono-style.navbar-default button.navbar-toggle #menu-btn-left h2 {
+        color: white; }
     nav#mono-style.navbar-default button.navbar-toggle:focus, nav#mono-style.navbar-default button.navbar-toggle:hover {
       background-color: #8db147; }
 
@@ -809,6 +829,10 @@ nav#graded-style.navbar-default {
       margin: 5px; }
     nav#graded-style.navbar-default button.navbar-toggle .icon-bar {
       background-color: #999; }
+    nav#graded-style.navbar-default button.navbar-toggle #menu-btn-left {
+      float: left; }
+      nav#graded-style.navbar-default button.navbar-toggle #menu-btn-left h2 {
+        color: white; }
     nav#graded-style.navbar-default button.navbar-toggle:focus, nav#graded-style.navbar-default button.navbar-toggle:hover {
       background-color: #8db147; }
 
@@ -917,7 +941,7 @@ nav#graded-style .navbar-header {
     color: #678234;
     text-decoration: none; }
   #title-branding .site-description {
-    padding-top: 5px;
+    padding: 5px 0;
     color: #678234;
     font-size: 1.1em; }
 
@@ -1410,6 +1434,12 @@ table.em-calendar {
     table.em-calendar > tfoot > tr > th > a,
     table.em-calendar > tfoot > tr > td > a {
       padding: 5px; }
+
+.map-holder {
+  max-width: 100%; }
+
+.em-location-map-container {
+  max-width: 100%; }
 
 /*******  FOOTER   ********/
 footer #mma-copyright h3 {
