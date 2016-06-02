@@ -37,7 +37,7 @@
 							<img id="header-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/voice-logo.png" alt="The Voice Magazines logo" width="100%">
 						</a>
 						</div>
-						<div class="col-sm-12 col-xs-6 exsmall site-title">
+						<div class="col-sm-12 col-xs-6 exsmall">
 							<div id="title-branding">
 <!-- 								<h1 class="site-title-heading">
 									<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>

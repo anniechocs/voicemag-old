@@ -89,6 +89,9 @@
 
 nav {
     @include nav-reset;
+    &.navbar-default{
+        margin-bottom: 0;
+    }
     .navbar-collapse {
         padding: 0; // default: 0 15px
         border-radius: 4px;

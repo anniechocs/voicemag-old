@@ -70,11 +70,12 @@
 .em-search-wrapper {
     display: none;
 }
-.event-datetime{
+h4.event-datetime{
 //   color: white; 
-//    background-color: $base-md;
-    border-top: solid 3px $base-md;
-    border-bottom: solid 3px $base-md;
+    max-width: 300px;
+//    background-color: $base-col;
+    border-top: solid 2px $base-md;
+    border-bottom: solid 2px $base-md;
     margin: 0;
     padding: 5px 10px;
 }

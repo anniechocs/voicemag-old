@@ -1,0 +1,26 @@
+/* DEBUG STYLES */
+body {
+  background-color: $bgcolour;
+}
+.page-container > header {
+    background-color:$ltgrey;
+}
+
+div{
+    border: 1px dotted white;
+div {
+    border: 1px dotted yellow;
+     div {
+        border: 1px solid red;
+        div {
+        border: 1px dashed purple;
+         div {
+                border: 1px dotted blue;
+             div {
+                    border: 1px dotted green;
+                }
+            }
+        }
+    }
+}
+}
