@@ -438,6 +438,17 @@ img {
     border-bottom: 4px solid #678234; }
 
 /************* LISTS ****************/
+/* DEFINITION LISTS */
+dt, dd {
+  padding: 1px 10px; }
+
+dt {
+  float: left;
+  clear: left;
+  text-align: right;
+  font-weight: bold;
+  color: #678234; }
+
 .list-box h4 {
   margin: 10px 0 5px 10px; }
 .list-box ul {
@@ -1430,9 +1441,6 @@ h4.event-datetime {
   margin: 0;
   padding: 5px 10px; }
 
-.event-place {
-  color: #678234; }
-
 .em-card .card-head a {
   display: inline-block;
   min-height: 5rem; }
@@ -1463,62 +1471,59 @@ table.em-calendar {
     table.em-calendar > tfoot > tr > td > a {
       padding: 5px; }
 
-.map-holder {
-  max-width: 100%; }
+.event-img-holder {
+  max-width: 100%;
+  margin: 10px 0 20px 0; }
+
+#event-right {
+  margin-top: 10px; }
+
+.event-notes {
+  padding: 0 2%; }
 
 .em-location-map-container {
   max-width: 100%; }
 
+.event-thmb-horiz {
+  width: 100%;
+  max-width: 400px; }
+
+.event-thmb-vert {
+  max-width: 200px;
+  display: block;
+  margin: auto; }
+
 /*******  FOOTER   ********/
+footer#site-footer {
+  padding: 15px;
+  background-color: #678234;
+  border: 1px solid #59702d;
+  border-top: 3px solid #59702d;
+  color: white; }
+  footer#site-footer a {
+    color: white; }
 footer #mma-copyright h3 {
   text-align: center;
-  margin-top: 5px; }
+  margin-top: 5px;
+  color: white; }
 footer #top-page-link {
   float: right;
   padding-right: 30px; }
 footer #dev-by {
   clear: both;
   text-align: center;
-  margin-top: 15px; }
-footer#site-footer {
-  padding: 15px;
-  background-color: #eee;
-  background-color: #eee;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#f8f8f8));
-  background: -webkit-linear-gradient(top, #eee, #f8f8f8);
-  background: linear-gradient(to bottom, #eee, #f8f8f8);
-  border: 1px solid #f8f8f8;
-  border-top: 3px solid #f8f8f8;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px; }
+  margin-top: 15px;
+  color: #f8f8f8; }
+  footer #dev-by a {
+    color: #eee; }
 footer .widget_nav_menu {
   margin-left: 20px; }
-footer h1 {
-  font-size: 1.4em;
-  margin-top: 0; }
 footer ul {
   padding-left: 0;
   padding-bottom: 15px; }
 footer li {
   display: inline;
   margin: 5px 10px; }
-
-/* DEBUG STYLES */
-.page-container > header {
-  background-color: #eee; }
-
-div {
-  border: 1px dotted white; }
-  div div {
-    border: 1px dotted yellow; }
-    div div div {
-      border: 1px solid red; }
-      div div div div {
-        border: 1px dashed purple; }
-        div div div div div {
-          border: 1px dotted blue; }
-          div div div div div div {
-            border: 1px dotted green; }
 
 /* MEDIA STYLES */
 /*********** MEDIA QUERIES FOR VERY SMALL SCREENS ****/

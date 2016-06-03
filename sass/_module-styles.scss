@@ -321,9 +321,20 @@ img {
 
 /************* LISTS ****************/
 
+/* DEFINITION LISTS */
 
+dt,dd {
+       padding: 1px 10px; 
+}
+  dt {
+    float: left;
+    clear: left;
 
-
+   // width: 8em; 
+    text-align: right;
+    font-weight: bold;
+    color: $base-col;
+  }
 
 .list-box {
     h4 {

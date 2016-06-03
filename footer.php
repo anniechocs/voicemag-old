@@ -9,8 +9,8 @@
 			</div><!--.site-content-->
 			
 			
-			<footer id="site-footer" role="contentinfo">
-				<div id="footer-row" class="row site-footer">
+			<footer id="site-footer" class="row" role="contentinfo">
+				<div id="footer-row" class="site-footer">
 					<div id="mma-copyright">
 						<h3><?php bloginfo('name'); ?> &copy; <?php echo date("Y") ?></h3>
 					</div>
