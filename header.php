@@ -37,13 +37,14 @@
 							<img id="header-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/voice-logo.png" alt="The Voice Magazines logo" width="100%">
 						</a>
 						</div>
-						<div class="col-sm-12 col-xs-6 exsmall site-title">
+						<div class="col-sm-12 col-xs-6 exsmall">
 							<div id="title-branding">
 <!-- 								<h1 class="site-title-heading">
 									<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
 								</h1> -->
-								<div class="site-description">
-										<?php bloginfo('description'); ?> 
+								<div class="site-description whats-on-menu">
+										<?php // bloginfo('description'); ?> 
+										<?php wp_nav_menu( array( 'theme_location' => 'whats-on' ) ); ?>
 								</div>
 							</div>
 						</div> 
@@ -52,13 +53,9 @@
 
 				<div class="col-sm-8" id="banner-container">
 					<img id="banner" src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner.jpg" alt="photo of the Wye valley" width="100%">
-				</div><!-- banner -->
 
-		</div> <!-- end header container .row -->
 
-		<div class="row main-navigation">
-		<div class="col-xs-12">
-			<nav class="navbar navbar-default" role="navigation">
+						<nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
 					
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
@@ -78,7 +75,14 @@
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?> 
 					<?php dynamic_sidebar('navbar-right'); ?> 
 				</div><!--.navbar-collapse-->
-			</nav>
+			</nav>		
+				</div><!-- banner -->
+
+		</div> <!-- end header container .row -->
+
+		<div class="row main-navigation">
+		<div class="col-xs-12">
+
 		</div>
 	</div><!--.main-navigation-->
 

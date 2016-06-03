@@ -111,7 +111,8 @@
 
 #sidebar-right {
     background-color: #fff;
-        border: $ltgrey solid 1px;  
+       // border: $ltgrey solid 1px;  
+        @include box-shadow($args1);
 
     .widget {
         padding: 20px 0 0 0;

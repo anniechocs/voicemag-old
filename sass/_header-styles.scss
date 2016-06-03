@@ -1,19 +1,26 @@
 /************ HEADER   ****************/
 .page-container > header {
-    background-color:$vltgrey;
     margin: 0;
     margin: 20px -15px;
     padding: 0 10px;
 }
 
+#header-container {
+        background-color: white;
+    @include box-shadow($args1);
+}
+
 .site-branding > div {
     margin-top: 0;
+}
+.logo-box a {
+   display: inline-block;
 }
 
 #title-branding {
     max-width: 450px;
     background-color:white;
-    padding: 15px;
+    padding: 0;  //15px;
     margin: 0;
     h1 {
         color: $base-col;
@@ -23,11 +30,33 @@
         text-decoration: none;
     }
 .site-description {
-    padding-top: 5px;
+    padding: 5px 0;
     color: $base-col;
    // font-style: italic;
     font-size: 1.1em;
     } 
+}
+.whats-on-menu{
+        ul {
+        margin-left: 0;
+        padding: 0 10px;
+        @include flex-container;
+        @include flex-flow(row wrap);
+    }
+    li {
+        list-style: none;
+        padding: 3px;
+        display: inline-block;
+        @include flex-item(1,1,180px);
+        a{
+            display: inline-block;
+            width: 100%;
+            padding: 7px 10px;
+            border: $ltgrey solid 1px;
+            border-radius: 6px;
+            @include gradient(white,$vltgrey);
+        }
+    }
 }
 
 //#main-header .site-branding {
@@ -45,10 +74,7 @@ div#search-2.widget.widget_search {
 .header-picture {
     padding-right: 0;
  #header-image {
-    margin: 10px 0 -10px 0;
-    display: block;
     width: 100%;
-    border-radius: 4px;
 }
 }
 

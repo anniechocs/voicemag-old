@@ -19,7 +19,11 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 						while (have_posts()) {
 							the_post();
 
-							get_template_part('content', get_post_format());
+
+							// get_template_part('content', get_post_format());
+							// insted of loading "the_content()" which gives default Events page-
+
+							get_template_part( 'template-parts/content', 'event' );
 
 							echo "\n\n";
 							

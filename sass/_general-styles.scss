@@ -1,6 +1,6 @@
 /* GENERAL STYLES */
 body {
-  background-color: $bgcolour;
+background-color: $bgcolour;
   font-size: 11pt;
   font-family: Calabri Light, Calabri, sans-serif;
   color: $dkgrey;
@@ -12,6 +12,26 @@ body {
             color:$base-md;
         }
     }
+}
+
+body {
+    background:  linear-gradient(to right, white,white), $bgcolour;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    $inner-bg: $screen-sm-min;
+    background-size: $inner-bg 100%;
+  @media (min-width: $screen-sm-min) {
+    $inner-bg: $screen-sm-min + 30px;
+    background-size: $inner-bg 100%;
+  }
+  @media (min-width: $screen-md-min) {
+    $inner-bg: $screen-md-min + 40px;
+    background-size: $inner-bg 100%;
+  }
+  @media (min-width: $screen-lg-min) {
+    $inner-bg: $screen-lg-min + 60px;
+    background-size: $inner-bg 100%;
+  }
 }
 
 h1 {

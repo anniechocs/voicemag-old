@@ -1,7 +1,7 @@
 // VARIABLES 
 $voice-green:#59702d;
 $contr-col:#ced54b;
-$bgcolour: #F2F7FE;
+//$bgcolour: #F2F7FE;
 
 $colour-set: (
     'dk': $voice-green,
@@ -33,6 +33,7 @@ $mlgrey: map-get($greys,'ml');
 $ltgrey: map-get($greys,'lt');
 $vltgrey: map-get($greys,'vlt');
 
+$bgcolour: $ltgrey;
 
 $colours1: (
     'dk': $voice-green,
@@ -44,11 +45,15 @@ $colours1: (
 );
 
 
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
 
 
 $mypadding: 10px;
 $args:5px 5px 5px 5px; 
-$args1: 3px 6px 15px 8px rgba(0, 0, 0, 0.2);
+$args1: 0 2px 3px rgba(0,0,0,.2);
 $args2: 2px 2px 10px 5px rgba(0, 0, 0, 0.1);
 $args2a:2px 2px 10px 5px rgba(0, 0, 0, 0.07);
 $args3: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
