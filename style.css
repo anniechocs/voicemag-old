@@ -1500,6 +1500,23 @@ footer li {
   display: inline;
   margin: 5px 10px; }
 
+/* DEBUG STYLES */
+.page-container > header {
+  background-color: #eee; }
+
+div {
+  border: 1px dotted white; }
+  div div {
+    border: 1px dotted yellow; }
+    div div div {
+      border: 1px solid red; }
+      div div div div {
+        border: 1px dashed purple; }
+        div div div div div {
+          border: 1px dotted blue; }
+          div div div div div div {
+            border: 1px dotted green; }
+
 /* MEDIA STYLES */
 /*********** MEDIA QUERIES FOR VERY SMALL SCREENS ****/
 @media (max-width: 480px) {

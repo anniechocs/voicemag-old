@@ -19,6 +19,14 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 						while (have_posts()) {
 							the_post();
 
+					     	$field = "Area";
+					     		$area = "voice";
+								$catField =  get_post_meta($post->ID, $field, true);
+									if ($catField != '') {
+										$area = $catField;
+									}
+
+
 							get_template_part( 'template-parts/content', 'home' );
 							?>
 
