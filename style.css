@@ -1417,6 +1417,9 @@ div#search-2.widget.widget_search {
   border: 1px solid transparent;
   font-size: 0.85em; }
 
+#comments {
+  display: none; }
+
 .em-search-wrapper {
   display: none; }
 

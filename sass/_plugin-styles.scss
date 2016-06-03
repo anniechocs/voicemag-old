@@ -67,6 +67,10 @@
     @include sub-list-styles;
 }
 
+#comments{
+    display: none;
+}
+
 .em-search-wrapper {
     display: none;
 }
