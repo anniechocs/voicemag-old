@@ -1,42 +1,16 @@
-<?php
-/**
- * Template Name: Home Page
- * 
- * @package bootstrap-basic
- */
-
-get_header();
-
-/**
- * determine main column size from actived sidebar
- */
-$main_column_size = bootstrapBasicGetMainColumnSize();
-?> 
-<?php get_sidebar('left'); ?> 
-				<div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
-					<main id="main" class="site-main" role="main">
-						<?php 
-						while (have_posts()) {
-							the_post();
-
-					     	$field = "Area";
-					     		$area = "voice";
-								$catField =  get_post_meta($post->ID, $field, true);
-									if ($catField != '') {
-										$area = $catField;
-									}
+<!-- Template Part for Home Styles. This is included in content-home.php  -->
+		<!-- Optional row of featured posts for home page-->		
 
 
-<<<<<<< HEAD
-			<div class="row flex-row">	
+			<div class="row flex-row">
 
-			<?php 
 
-				$args2 = array(
-					'posts_per_page'=>9,
+			<?php 							
+				$args1 = array(
+					'posts_per_page'=>2,
 				'post_type'=>'event',
 				'order'=>'ASC',
-				'event-categories' => 'front-page',
+				'event-categories' => 'featured',
 				'meta_query' => array(
 									array(
 									//	'key' => '_start_ts', change this to display until end-time
@@ -54,15 +28,14 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 				'meta_value' => current_time('timestamp'),
 				'meta_value_num' => current_time('timestamp'),
 				'meta_compare' => '>='
-				);
-			?>
 
-			<?php $query2 = new WP_Query( $args2);
-				$counter = 1;
-	               
-	                		while ( $query2->have_posts() ) {
-										$query2->the_post();
-										if ( in_array( $post->ID, $do_not_duplicate ) ) continue;
+				//$do_not_duplicate = array();
+				); ?>
+
+				               <?php $query1 = new WP_Query( $args1);		
+				               while ( $query1->have_posts() ) {
+										$query1->the_post();
+										$do_not_duplicate[] = $post->ID;
 										$EM_Event = em_get_event($post->ID, 'post_id');
 										?>
 
@@ -102,34 +75,8 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 												
 				     					</section>	
 
-									<?php 
-										 if($counter == 3 || $counter == 6 ) { ?>
-												</div><div class="row flex-row">	 
-										<?  } //end if ?>
 
-									<?php	$counter++ ;
-									}   // end of while for query
-										wp_reset_postdata(); ?>
-</div> <!-- .row -->
+									<?php	}   // end of while for query
+										wp_reset_postdata(); ?>	 
 
-=======
-							get_template_part( 'template-parts/content', 'home' );
-							?>
->>>>>>> homepages-development
-
-
-
-							
-						<?php
-						} //endwhile have posts;
-						?> 
-
-
-
-
-					</main>
-				</div>
-<?php get_sidebar('right'); ?> 
-<?php get_footer(); ?> 
-
-
+			</div> <!--  end of first flex row	 -->
