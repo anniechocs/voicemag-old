@@ -24,37 +24,44 @@
 			<?php endif; ?>
 		</div> <!-- end #event-left -->
 		<div id="event-right" class="col-sm-6">
+				<?php 
+		     	$field = "contact-phone";
+		     	$contactphone =  get_post_meta($post->ID, $field, true);
+		     	$field = "contact-url";
+				$contacturl =  get_post_meta($post->ID, $field, true);	
+				$field = "place";
+				$altplace =  get_post_meta($post->ID, $field, true);	
+				$field = "tickets";
+				$tickets =  get_post_meta($post->ID, $field, true);	?>
 			<dl>
 			  <dt>Date: </dt>
 			  <dd><?php echo $EM_Event->output('#_EVENTDATES') . "&nbsp;" ; ?> </dd>
 
+			<?php if ($EM_Event->output('#_EVENTTIMES') != '12:00 am'): ?>
 			<dt>Time: </dt>
 			<dd><?php  echo $EM_Event->output('#_EVENTTIMES'); ?></dd>
+			<?php endif; ?>
 			<?php if(!empty($EM_Event->location_id)): ?>
 				<dt>Location: </dt>
 				<dd>
 				<a href="<?php 	echo $EM_Event->output('#_LOCATIONURL'); ?>">
 				 <?php echo $EM_Event->output('#_LOCATIONNAME'); ?></a> </dd>
+			<?php elseif($altplace != ''): ?>	
+				<dt>Takes place: </dt>
+				<dd><?php echo $altplace; ?></dd> 
 			<?php endif; ?> 
 			</dl>
 
 			<dl>
-		     	<?php 
-		     	$field = "contact-phone";
-		     	$contactphone =  get_post_meta($post->ID, $field, true);
-		     	$field = "contact-url";
-				$contacturl =  get_post_meta($post->ID, $field, true);	
-				$field = "tickets";
-				$tickets =  get_post_meta($post->ID, $field, true);	?>
-						<?php if ($contactphone != ''): ?> 
-							<dt>Contact: </dt><dd><?php echo $contactphone; ?></dd>
-						<?php endif; ?>
-						<?php if ($contacturl != ''): ?> 
-							<dt>Visit: </dt><dd><?php echo $contacturl; ?></dd>
-						<?php endif; ?>
-						<?php if ($tickets != ''): ?> 
-							<dt>Tickets: </dt><dd><?php echo $tickets; ?></dd>
-						<?php endif; ?>
+			<?php if ($contactphone != ''): ?> 
+				<dt>Contact: </dt><dd><?php echo $contactphone; ?></dd>	
+			<?php endif; ?>
+			<?php if ($contacturl != ''): ?> 
+				<dt>Visit: </dt><dd><?php echo $contacturl; ?></dd>
+			<?php endif; ?>
+			<?php if ($tickets != ''): ?> 
+				<dt>Tickets: </dt><dd><?php echo $tickets; ?></dd>
+			<?php endif; ?>
 			</dl>
 
 	</div> <!-- end #event-left -->

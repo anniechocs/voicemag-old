@@ -84,13 +84,13 @@ body {
       color: #8db147; }
 
 body {
-  background: linear-gradient(to right, white, white), #eee;
+  background: linear-gradient(white, white), #eee;
   background-repeat: no-repeat;
-  background-position: center 10px;
+  background-position: center 0;
   background-size: 768px 100%; }
   @media (min-width: 768px) {
     body {
-      background-size: 798px 100%; } }
+      background-size: 808px 100%; } }
   @media (min-width: 992px) {
     body {
       background-size: 1032px 100%; } }
@@ -261,7 +261,12 @@ img {
   -webkit-flex-flow: row wrap;
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
 
 /* Vert card general and fall back values */
 .vert-card {
@@ -311,10 +316,10 @@ img {
 /* flex-box version for browsers that support it */
 /******* vert-card flexbox *****/
 .vert-card {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 160px;
-  -ms-flex: 1 1 160px;
-  flex: 1 1 160px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 calc(33% - 20px);
+  -ms-flex: 0 1 calc(33% - 20px);
+  flex: 0 1 calc(33% - 20px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -327,11 +332,9 @@ img {
   -moz-align-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  -moz-justify-content: flex-start;
-  justify-content: flex-start; }
+  -webkit-box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2); }
   .vert-card .flex-grow {
     -webkit-box-flex: 10;
     -webkit-flex: 10 1 auto;
@@ -375,67 +378,16 @@ img {
       -ms-flex: 1 1 150px;
       flex: 1 1 150px; }
   .vert-card .card-footer {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
     -webkit-align-self: flex-end;
     -moz-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end; }
-
-#module-styles-1 .vert-card {
-  border-radius: 4px;
-  -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04); }
-  #module-styles-1 .vert-card .flex-img-holder {
-    margin: 0 10px 10px 10px;
-    -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-    -moz-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04); }
-#module-styles-1 .horiz-card {
-  -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04); }
-  #module-styles-1 .horiz-card img {
-    -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-    -moz-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04); }
-#module-styles-1 .single-note, #module-styles-1 notice-board {
-  -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04); }
-
-#module-styles-2 #mod-vert-card {
-  background-color: #eee;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(white));
-  background: -webkit-linear-gradient(top, #eee, white);
-  background: linear-gradient(to bottom, #eee, white); }
-#module-styles-2 .vert-card:nth-of-type(1) {
-  border: 1px solid #ddd; }
-  #module-styles-2 .vert-card:nth-of-type(1) .card-head {
-    border: 0 solid transparent;
-    border-bottom: 4px solid transparent;
-    background: white, #678234;
-    background: -webkit-linear-gradient(left, white, white), -webkit-linear-gradient(left, #678234, #9dbe5e);
-    background: linear-gradient(white, white), linear-gradient(to right, #678234, #9dbe5e);
-    background-clip: padding-box, border-box; }
-#module-styles-2 .vert-card:nth-of-type(2) {
-  border: 1px solid #ddd; }
-  #module-styles-2 .vert-card:nth-of-type(2) .card-head {
-    border: 0 solid transparent;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    background: white, #678234;
-    background: -webkit-linear-gradient(left, white, white), -webkit-linear-gradient(left, #678234, #9dbe5e);
-    background: linear-gradient(white, white), linear-gradient(to right, #678234, #9dbe5e);
-    background-clip: padding-box, border-box; }
-#module-styles-2 .vert-card:nth-of-type(3) {
-  border: 1px solid #ddd; }
-  #module-styles-2 .vert-card:nth-of-type(3) .card-head {
-    border: 0 solid transparent;
-    border-bottom: 4px solid #678234; }
+    .vert-card .card-footer.readmore {
+      margin-top: -10px; }
 
 /************* LISTS ****************/
 /* DEFINITION LISTS */
@@ -1003,7 +955,7 @@ nav#graded-style .navbar-header {
   .whats-on-menu li a {
     display: inline-block;
     width: 100%;
-    padding: 7px 10px;
+    padding: 5px 10px;
     border: #eee solid 1px;
     border-radius: 6px;
     background-color: white;
@@ -1431,9 +1383,6 @@ div#search-2.widget.widget_search {
 #comments {
   display: none; }
 
-.em-search-wrapper {
-  display: none; }
-
 h4.event-datetime {
   max-width: 300px;
   border-top: solid 2px #8db147;
@@ -1495,6 +1444,7 @@ table.em-calendar {
 
 /*******  FOOTER   ********/
 footer#site-footer {
+  margin: 0 -45px;
   padding: 15px;
   background-color: #678234;
   border: 1px solid #59702d;

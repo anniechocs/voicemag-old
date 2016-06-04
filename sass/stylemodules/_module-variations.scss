@@ -1,0 +1,64 @@
+// Cards Magor
+
+#module-styles-1 {
+   .vert-card {
+        border-radius: 4px;
+        @include box-shadow($args3); 
+       .flex-img-holder {
+            margin: 0 10px 10px 10px;
+            @include box-shadow($args3); 
+       }
+   
+    } 
+    
+    .horiz-card{
+       @include box-shadow($args3); 
+        img {
+            @include box-shadow($args3); 
+        }
+    }
+    .single-note, notice-board {
+        @include box-shadow($args3); 
+    }
+}
+
+// Cards Monochrome
+#module-styles-2 {
+    #mod-vert-card {
+        @include gradient($ltgrey,white);
+    }
+    .vert-card:nth-of-type(1) {
+        border: 1px solid $mlgrey;
+        .card-head {
+            border: 0 solid transparent;
+            border-bottom: 4px solid transparent;
+            @include border-gradient($base-col,lighten($base-col,20));
+        }
+    }
+    .vert-card:nth-of-type(2) {
+        border: 1px solid $mlgrey;
+        .card-head {
+            border: 0 solid transparent;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            @include border-gradient($base-col,lighten($base-col,20));
+        }
+    }
+        .vert-card:nth-of-type(3) {
+        border: 1px solid $mlgrey;
+        .card-head {
+            border: 0 solid transparent;
+            border-bottom: 4px solid $base-col;
+        }
+    }
+  
+//        .vert-card:nth-of-type(3) {
+//        border: 1px solid $mlgrey;
+//        .card-head {
+//            background-color:$base-col;
+//            h2, h3 {color: white;}
+//            //@include gradient-horiz($base-col,lighten($base-col,20));
+//            //@include gradient(lighten($base-col,20),$base-col);
+//        }
+//    }
+}
