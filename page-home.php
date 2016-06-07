@@ -30,18 +30,10 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 
 							get_template_part( 'template-parts/content', 'home' );
 							?>
-
-
-
-
-
-							
+					
 						<?php
 						} //endwhile have posts;
 						?> 
-
-
-
 
 					</main>
 				</div>

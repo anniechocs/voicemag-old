@@ -1,10 +1,22 @@
 /*******  FOOTER   ********/
 
 footer {
+        &#site-footer {
+            margin: 0 -45px;
+        padding: 15px;
+        background-color: $base-col;
+        border: 1px solid $base-dk;
+        border-top: 3px solid $base-dk;
+        color: white;
+            a {
+                color: white;
+            }
+    }
     #mma-copyright {
         h3 {
             text-align: center;
             margin-top:5px;
+            color: white;
         }
     }
     #top-page-link {
@@ -15,23 +27,13 @@ footer {
         clear: both;
         text-align: center;
         margin-top: 15px;
-    }
-    &#site-footer {
-        padding: 15px;
-        background-color: $ltgrey;
-        @include gradient ($ltgrey,$vltgrey);
-        border: 1px solid $vltgrey;
-        border-top: 3px solid $vltgrey;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
-               
+        color: $vltgrey;
+        a {
+            color:$ltgrey;
+        }
     }
     .widget_nav_menu {
         margin-left: 20px;
-    }
-    h1 {
-        font-size: 1.4em;
-        margin-top: 0;
     }
     ul {
         padding-left: 0;

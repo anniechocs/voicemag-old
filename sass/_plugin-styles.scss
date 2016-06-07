@@ -71,9 +71,7 @@
     display: none;
 }
 
-.em-search-wrapper {
-    display: none;
-}
+
 h4.event-datetime{
 //   color: white; 
     max-width: 300px;
@@ -82,9 +80,6 @@ h4.event-datetime{
     border-bottom: solid 2px $base-md;
     margin: 0;
     padding: 5px 10px;
-}
-.event-place{
-   color: $base-col;     
 }
 
 .em-card{
@@ -105,9 +100,25 @@ table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
 table.em-calendar {
     @include responsive-table;
 }
-.map-holder{
+.event-img-holder{
     max-width: 100%;
+    margin: 10px 0 20px 0;
+}
+#event-right{
+    margin-top: 10px;
+}
+.event-notes{
+ padding: 0 2%;
 }
 .em-location-map-container{
     max-width: 100%;
+}
+.event-thmb-horiz{
+    width: 100%;
+    max-width: 400px;
+}
+.event-thmb-vert{
+    max-width: 200px;
+    display: block;
+    margin: auto;
 }

@@ -72,9 +72,9 @@
 											
 											</div> <!-- .flex-grow -->
 
-									       <p class="card-footer event-place">
-												<?php echo $EM_Event->output('#_LOCATIONNAME'); ?>
-									       </p>
+												<a  class="card-footer readmore" href="<?php the_permalink(); ?>" >
+													read more...
+												</a>
 												
 				     					</section>	
 
