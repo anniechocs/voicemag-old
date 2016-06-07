@@ -1050,86 +1050,6 @@ div#search-2.widget.widget_search {
   border: 1px solid transparent;
   font-size: 0.85em; }
 
-/************* MAGOR ******************/
-#module-styles-1 .styled-list ul {
-  padding: 5px 0 0 0;
-  list-style: none;
-  max-width: 350px; }
-  #module-styles-1 .styled-list ul li {
-    border: 1px solid #f8f8f8; }
-    #module-styles-1 .styled-list ul li a {
-      display: block;
-      line-height: 1.2;
-      padding: 10px 5px 10px 15px; }
-  #module-styles-1 .styled-list ul li:hover a, #module-styles-1 .styled-list ul li:focus a, #module-styles-1 .styled-list ul li:active a {
-    text-decoration: none; }
-#module-styles-1 .styled-list ul li {
-  background-color: #fefefe;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f8f8f8));
-  background: -webkit-linear-gradient(top, #fefefe, #f8f8f8);
-  background: linear-gradient(to bottom, #fefefe, #f8f8f8); }
-  #module-styles-1 .styled-list ul li a {
-    border-radius: 8px;
-    -webkit-transition-property: color, background-color;
-    transition-property: color, background-color;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
-#module-styles-1 .styled-list ul li:hover, #module-styles-1 .styled-list ul li:focus, #module-styles-1 .styled-list ul li:active {
-  background-color: #fdfdfd;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#eee));
-  background: -webkit-linear-gradient(top, #fdfdfd, #eee);
-  background: linear-gradient(to bottom, #fdfdfd, #eee); }
-#module-styles-1 #sidebar-right {
-  background-color: #fff;
-  border: #eee solid 1px;
-  -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04); }
-  #module-styles-1 #sidebar-right .widget {
-    padding: 20px 0 0 0;
-    border: 0; }
-    #module-styles-1 #sidebar-right .widget ul {
-      padding: 5px 0 0 0;
-      list-style: none;
-      max-width: 350px; }
-      #module-styles-1 #sidebar-right .widget ul li {
-        border: 1px solid #f8f8f8; }
-        #module-styles-1 #sidebar-right .widget ul li a {
-          display: block;
-          line-height: 1.2;
-          padding: 10px 5px 10px 15px; }
-      #module-styles-1 #sidebar-right .widget ul li:hover a, #module-styles-1 #sidebar-right .widget ul li:focus a, #module-styles-1 #sidebar-right .widget ul li:active a {
-        text-decoration: none; }
-    #module-styles-1 #sidebar-right .widget .widget-title {
-      font-size: 22px; }
-
-/************* MONCHROME LIST STYLES ***********/
-#module-styles-2 .styled-list {
-  padding: 5px 0 15px 0;
-  border: 0 solid transparent;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-  background: white, #678234;
-  background: -webkit-linear-gradient(left, white, white), -webkit-linear-gradient(left, #678234, #9dbe5e);
-  background: linear-gradient(white, white), linear-gradient(to right, #678234, #9dbe5e);
-  background-clip: padding-box, border-box; }
-  #module-styles-2 .styled-list ul {
-    padding: 5px 0 0 0;
-    list-style: none;
-    max-width: 350px; }
-    #module-styles-2 .styled-list ul li {
-      border: 1px solid #f8f8f8; }
-      #module-styles-2 .styled-list ul li a {
-        display: block;
-        line-height: 1.2;
-        padding: 10px 5px 10px 15px; }
-    #module-styles-2 .styled-list ul li:hover a, #module-styles-2 .styled-list ul li:focus a, #module-styles-2 .styled-list ul li:active a {
-      text-decoration: none; }
-
 #sidebar-right {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
@@ -1152,6 +1072,35 @@ div#search-2.widget.widget_search {
         text-decoration: none; }
     #sidebar-right .widget .widget-title {
       font-size: 22px; }
+
+/* SIDEBAR POSTS WIDGET STYLES */
+.side-thumb {
+  display: none; }
+  @media (min-width: 768px) {
+    .side-thumb {
+      display: block;
+      padding: 5px;
+      float: left;
+      width: 33%; }
+      .side-thumb img {
+        width: 100%;
+        max-width: 100px; } }
+
+.side-excerpt {
+  padding: 5px;
+  width: 100%;
+  font-size: 0.9em;
+  float: left; }
+  @media (min-width: 768px) {
+    .side-excerpt {
+      width: 66%; } }
+
+#sidebar-posts .post-item {
+  border: #eee 1px solid;
+  padding: 5px;
+  margin-bottom: 10px; }
+  #sidebar-posts .post-item h3 {
+    margin: 5px 0 5px 5px; }
 
 /* STYLE SHEET STYLES */
 #main-column article#generalstyles, #main-column article#colourstyles {
