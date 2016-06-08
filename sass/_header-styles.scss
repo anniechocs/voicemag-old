@@ -15,6 +15,7 @@
 }
 .logo-box a {
    display: inline-block;
+    width: 300px;
 }
 
 #title-branding {
@@ -36,28 +37,7 @@
     font-size: 1.1em;
     } 
 }
-.whats-on-menu{
-        ul {
-        margin-left: 0;
-        padding: 0 10px;
-        @include flex-container;
-        @include flex-flow(row wrap);
-    }
-    li {
-        list-style: none;
-        padding: 3px;
-        display: inline-block;
-        @include flex-item(1,1,180px);
-        a{
-            display: inline-block;
-            width: 100%;
-            padding: 5px 10px;
-            border: $ltgrey solid 1px;
-            border-radius: 6px;
-            @include gradient(white,$vltgrey);
-        }
-    }
-}
+
 
 //#main-header .site-branding {
 .site-branding {
@@ -71,16 +51,51 @@ div#search-2.widget.widget_search {
     margin-top: 10px;
 }
 
+
+
+/* HEADER BACKGROUND IMAGE FOR DIFFERENT SCREENS */
+
 .header-picture {
+    @include gradient(transparent, black);
+    background: url(images/banner-800.jpg), 
+        linear-gradient(transparent 60%, rgba(0, 0, 0, 0.6) 85%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
     padding-right: 0;
- #header-image {
-    width: 100%;
+    #site-logo {
+          height: 150px;
+          margin: 10px 20px 0 20px;
+      }
+
+  @media (min-width: $screen-sm-min) {
+    background: url(images/banner.jpg), 
+        linear-gradient(transparent 60%, rgba(0, 0, 0, 0.6) 85%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  @media (max-width: 480px) {
+    background-image: url(images/banner-500.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;  
+    #site-logo {
+          height: 120px;
+          margin: 15px;
+      }
 }
 }
 
-#banner-container {
-    overflow: hidden;
-    #banner{
-        width: 100%;
+ul.header-mag-list {
+    list-style: none;
+    li {
+        display: inline;
+        margin: 0 5px 10px 10px;
+        color: white;
+        font-size: 1.1em;
     }
+    
 }

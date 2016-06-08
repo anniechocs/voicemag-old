@@ -1,38 +1,4 @@
-/***************** HEADERS **************/
 
-#module-styles-1 {
-.entry-header h1, .entry-header h1.entry-title, h1.entry-header, .page-header h1 {    
-    color: $base-dk;
-    border-bottom: 1px solid $base-dk;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    width: 66%;
-    min-width: 250px;
-}
-}
-
-#module-styles-2 {
-.entry-header, .entry-header , .page-header {  
-    background: linear-gradient(to right,darken($base-col,20),lighten($base-col,20)); 
-    color: $base-dk;
-    padding: 0 0 3px 0;
-    width: 66%;
-    min-width: 250px;
-    h1{
-        background-color: white;
-        color: darken($base-col,20);
-        mix-blend-mode: lighten;
-        padding: 5px 0;
-        margin: 0;
-        }
-    }
-    h1.entry-title, h1.entry-header {
-         background-color: white;
-//        padding-bottom: 10px;
-//        margin-bottom: 20px; 
-    }
-
-}
 
 /**************** IMAGES ***************/
 img {
@@ -124,7 +90,6 @@ img {
             display: block;
             float: left;
             font-size :0.9em;
-            //padding: 0 10px 5px 10px;
             margin: 5px 10px 5px 10px;
             }
 }
@@ -139,16 +104,14 @@ img {
     background-color: $ltgrey;
 }
 
-
-
-.horiz-card {
-    @include single-note-mixin;
-    @include clearfix;
-    div {
+    .read-more {
+        font-style: italic;
+        float: right;
         padding-right: 10px;
-    }    
-}
-
+        text-align: right;
+        display: inline-block;
+        vertical-align: baseline;
+        }
 
 .flex-row {
     @include flex-container;
@@ -172,11 +135,15 @@ img {
     width: 100%;
     float: left;
     display: block;
-    .flex-grow  div {
-        float: left;
-        max-width: 300px;
-         margin: 0 0 10px 0;
-      //  padding: 5px 10px;
+    .flex-grow { 
+        h2, h3 {
+            margin-bottom: 0;
+        }    
+        div {
+            float: left;
+            max-width: 300px;
+             margin: 0;
+        }
     }
     .flex-img-holder{
         padding: 0;
@@ -184,10 +151,6 @@ img {
           width: 100%;  
         }
     }
-    .read-more {
-        font-style: italic;
-        text-align: right;
-        }
     .card-footer {
         padding: 5px 10px;
         margin: 0;
@@ -206,14 +169,9 @@ img {
 /******* vert-card flexbox *****/
 
 @mixin vert-card-mixin { 
-    @include flex-item(0, 1, calc(33% - 20px));
     @include flex-container;
     @include flex-flow(column nowrap);
     @include align-content(flex-start);
-    .card-head {
-      //  @include flex-item(0,1,auto);
-     //   @include align-content(flex-start);
-    }
     .flex-grow {
         @include flex-item(10,1,auto);
         @include flex-container;
@@ -222,17 +180,9 @@ img {
         @include flex-justify(flex-start);
         div {
             @include flex-item(1,1,250px); 
-         //   @include align-self(center); 
         }
         div.flex-img-holder{
             @include flex-item(1,1,250px);
-          //  @include flex-container;
-        //    @include flex-flow(column wrap);
-         //   @include align-self(center);
-            img {
-            //   @include flex-item(1,1,auto);
-            //   @include align-self(flex-start);    
-            }
         }
         div.flex-img-vert{
             @include flex-item(1,1,150px);
@@ -248,15 +198,75 @@ img {
             margin-top: -10px;
         }
     }
-
 }
 
 .vert-card {
+    @media (min-width: 600px) { 
+        @include flex-item(0, 1, calc(33% - 20px));
+        }
     @include vert-card-mixin;
     @include box-shadow($args5);
 }
 
+.horiz-card {
+    @include single-note-mixin;
+    @include clearfix;
+    @include box-shadow($args5);
+    margin: 10px;
+    .card-left{
+        width: 200px;
+        margin: auto;
+        float: left;
+     @media (min-width: 600px) { 
+        width: calc(33% - 10px);
+        }       
+    }
+    .card-right{
+        float: right;
+     @media (min-width: 600px) { 
+        width: calc(66% - 10px);
+        }       
+    }
+    h3 .horiz-event-date {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        color: white; 
+        float: right;
+        background-color: $base-col;
+    }
+}
 
+.feature-card{
+    margin: 10px;
+    position: relative;
+    float: left;
+    .feature-img-holder{
+        width: 100%;
+    }
+    @media (min-width: 600px) { 
+        width: calc(33% - 20px);
+    }
+}
+
+.feature-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 0 10px;
+    backface-color: black;
+    @include gradient(transparent, black);
+    h2 {
+        color: $vltgrey;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
 
 
 /************* LISTS ****************/
