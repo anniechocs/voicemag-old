@@ -1,5 +1,6 @@
 <!-- Template Part for Home Styles. This is included in content-home.php  -->
-		<!-- Main home page-->		
+		
+	<!-- Main home page-->		
 		<!-- find which homepage through custom field-->
      	<?php 
      	$field = "Area";
@@ -100,9 +101,9 @@
 				     					</section>	
 
 									<?php 
-										 if($counter == 3) { ?>
+										 if($counter == 3): ?>
 												</div><div class="row flex-row">	 
-										<?  } //end if ?>
+										<?  endif; ?>
 
 									<?php	$counter++ ;
 									}   // end of while for query

@@ -39,13 +39,12 @@
 			?>
 
 			<?php $query2 = new WP_Query( $args2);
-               
 	                		while ( $query2->have_posts() ): 
 										$query2->the_post();
 										$EM_Event = em_get_event($post->ID, 'post_id');
 										?>
 
-										<section class="horiz-card em-card">
+										<section class="horiz-card em-card">											
 											<div class="card-left">	
 										     	<?php 
 					     							if ( has_post_thumbnail() ):
@@ -70,7 +69,6 @@
 													<h3> <?php the_title() ?> <span class="horiz-event-date">
 														<?php echo $EM_Event->output('#_EVENTDATES'); ?> </span></h3>
 												</a>
-
 												<?php echo $EM_Event->output('#_EVENTEXCERPT'); ?> 
 
 												<a  class="read-more" href="<?php the_permalink(); ?>" >
@@ -81,6 +79,6 @@
 												
 				     					</section>	
 
-									<?php endwhile;
+									<?php  endwhile;
 										wp_reset_postdata(); ?>
 </div> <!-- .row -->

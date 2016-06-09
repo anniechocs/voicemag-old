@@ -213,6 +213,11 @@ img {
     @include clearfix;
     @include box-shadow($args5);
     margin: 10px;
+//    @media (min-width: 600px) { 
+//        width: 45%;
+//        width: calc(50% - 20px);
+//    }
+    float: left;
     .card-left{
         width: 200px;
         margin: auto;
@@ -236,16 +241,34 @@ img {
     }
 }
 
+/* FRONT PAGE TOP ROW WITH FEATURE CARDS */
+
+.feature-row{
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+.home-page-header {
+    margin: 0 20px;
+}
+
 .feature-card{
-    margin: 10px;
+    margin: -5px;
     position: relative;
     float: left;
+    border-radius: 4px;
+    @media (min-width: $screen-sm-min) { 
+       margin: 0;
+        }  
+    @media (min-width: $screen-md-min ) { 
+       margin: 5;
+        } 
     .feature-img-holder{
+       // border-top: 4px solid $base-col;
         width: 100%;
+        border-radius: 4px;
     }
-    @media (min-width: 600px) { 
-        width: calc(33% - 20px);
-    }
+    @include box-shadow($args5);
 }
 
 .feature-title {
@@ -259,7 +282,7 @@ img {
     @include gradient(transparent, black);
     h2 {
         color: $vltgrey;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-bottom: 10px;
     }
     &:hover {

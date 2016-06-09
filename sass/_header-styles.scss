@@ -57,9 +57,7 @@ div#search-2.widget.widget_search {
 
 .header-picture {
     @include gradient(transparent, black);
-    background: url(images/banner-800.jpg), 
-        linear-gradient(transparent 60%, rgba(0, 0, 0, 0.6) 85%);
-    background-blend-mode: multiply;
+    background: url(images/banner-800.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 200px;
@@ -70,9 +68,8 @@ div#search-2.widget.widget_search {
       }
 
   @media (min-width: $screen-sm-min) {
-    background: url(images/banner.jpg), 
-        linear-gradient(transparent 60%, rgba(0, 0, 0, 0.6) 85%);
-    background-blend-mode: multiply;
+    background: url(images/banner.jpg);
+       // linear-gradient(transparent 60%, rgba(0, 0, 0, 0.6) 85%);
     background-size: cover;
     background-repeat: no-repeat;
 

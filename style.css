@@ -363,7 +363,8 @@ img {
   -webkit-box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2);
-  margin: 10px; }
+  margin: 10px;
+  float: left; }
   .horiz-card h2, .horiz-card h3 {
     color: #678234;
     margin: 10px; }
@@ -395,15 +396,31 @@ img {
     float: right;
     background-color: #678234; }
 
+/* FRONT PAGE TOP ROW WITH FEATURE CARDS */
+.feature-row {
+  padding: 20px 40px;
+  margin-bottom: 20px; }
+
+.home-page-header {
+  margin: 0 20px; }
+
 .feature-card {
-  margin: 10px;
+  margin: -5px;
   position: relative;
-  float: left; }
-  .feature-card .feature-img-holder {
-    width: 100%; }
-  @media (min-width: 600px) {
+  float: left;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2); }
+  @media (min-width: 768px) {
     .feature-card {
-      width: calc(33% - 20px); } }
+      margin: 0; } }
+  @media (min-width: 992px) {
+    .feature-card {
+      margin: 5; } }
+  .feature-card .feature-img-holder {
+    width: 100%;
+    border-radius: 4px; }
 
 .feature-title {
   position: absolute;
@@ -419,7 +436,7 @@ img {
   background: linear-gradient(to bottom, transparent, black); }
   .feature-title h2 {
     color: #f8f8f8;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 10px; }
   .feature-title:hover {
     text-decoration: none;
@@ -984,8 +1001,7 @@ div#search-2.widget.widget_search {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
   background: -webkit-linear-gradient(top, transparent, black);
   background: linear-gradient(to bottom, transparent, black);
-  background: url(images/banner-800.jpg), linear-gradient(transparent 60%, rgba(0, 0, 0, 0.6) 85%);
-  background-blend-mode: multiply;
+  background: url(images/banner-800.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
@@ -995,8 +1011,7 @@ div#search-2.widget.widget_search {
     margin: 10px 20px 0 20px; }
   @media (min-width: 768px) {
     .header-picture {
-      background: url(images/banner.jpg), linear-gradient(transparent 60%, rgba(0, 0, 0, 0.6) 85%);
-      background-blend-mode: multiply;
+      background: url(images/banner.jpg);
       background-size: cover;
       background-repeat: no-repeat; } }
   @media (max-width: 480px) {
@@ -1274,9 +1289,6 @@ ul.header-mag-list {
     content: "contr-vlt"; }
 
 /***************** MAIN CONTENT **************/
-.single article, .page article {
-  min-height: 500px; }
-
 #main {
   background-color: #fff;
   border: 0 #ddd; }
