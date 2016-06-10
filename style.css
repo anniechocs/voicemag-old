@@ -302,6 +302,10 @@ img {
       -webkit-flex: 0 1 calc(33% - 20px);
       -ms-flex: 0 1 calc(33% - 20px);
       flex: 0 1 calc(33% - 20px); } }
+  .vert-card .flex-img-holder {
+    margin: auto; }
+  .vert-card .flex-img-vert {
+    margin: auto; }
   .vert-card .flex-grow {
     -webkit-box-flex: 10;
     -webkit-flex: 10 1 auto;
@@ -318,27 +322,12 @@ img {
     -webkit-align-content: flex-start;
     -moz-align-content: flex-start;
     -ms-flex-line-pack: start;
-    align-content: flex-start;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    -webkit-justify-content: flex-start;
-    -moz-justify-content: flex-start;
-    justify-content: flex-start; }
+    align-content: flex-start; }
     .vert-card .flex-grow div {
       -webkit-box-flex: 1;
       -webkit-flex: 1 1 250px;
       -ms-flex: 1 1 250px;
       flex: 1 1 250px; }
-    .vert-card .flex-grow div.flex-img-holder {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1 1 250px;
-      -ms-flex: 1 1 250px;
-      flex: 1 1 250px; }
-    .vert-card .flex-grow div.flex-img-vert {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1 1 150px;
-      -ms-flex: 1 1 150px;
-      flex: 1 1 150px; }
     .vert-card .flex-grow p {
       -webkit-box-flex: 1;
       -webkit-flex: 1 1 150px;
@@ -1430,13 +1419,6 @@ h4.event-datetime {
   background-color: #678234;
   margin: 0;
   padding: 10px; }
-
-.em-card .card-head a {
-  display: inline-block;
-  min-height: 5rem; }
-  .em-card .card-head a h3 {
-    margin-bottom: 3px;
-    font-size: 1.5rem; }
 
 table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
   color: #8db147; }

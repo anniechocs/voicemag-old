@@ -17,7 +17,7 @@
 			<?php 
 
 				$args2 = array(
-					'posts_per_page'=>6,
+					'posts_per_page'=>3,
 				'post_type'=>'event',
 				'order'=>'ASC',
 				'event-categories' => 'featured',
@@ -50,7 +50,7 @@
 			?>
 
 			<?php $query2 = new WP_Query( $args2);
-				$counter = 1;
+				// $counter = 1;
 	               
 	                		while ( $query2->have_posts() ) {
 										$query2->the_post();
@@ -63,11 +63,11 @@
 									<?php include(locate_template('template-parts/cards/content-vertcard.php')); ?>
 
 									<?php 
-										 if($counter == 3): ?>
-												</div><div class="row flex-row">	 
-										<?  endif; ?>
+										// if($counter == 3): ?>
+												<!-- </div><div class="row flex-row">	 --> 
+										<? // endif; ?>
 
-									<?php	$counter++ ;
+									<?php	//$counter++ ;
 									}   // end of while for query
 										wp_reset_postdata(); ?>
 </div> <!-- .row -->

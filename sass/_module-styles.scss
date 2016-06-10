@@ -172,21 +172,23 @@ img {
     @include flex-container;
     @include flex-flow(column nowrap);
     @include align-content(flex-start);
+    .flex-img-holder{
+           // @include flex-item(1,1,250px);
+            margin: auto;
+        }
+    .flex-img-vert{
+         //   @include flex-item(1,1,150px); 
+            margin: auto;
+        }
     .flex-grow {
         @include flex-item(10,1,auto);
         @include flex-container;
         @include flex-flow(row wrap);
         @include align-content(flex-start);
-        @include flex-justify(flex-start);
         div {
             @include flex-item(1,1,250px); 
         }
-        div.flex-img-holder{
-            @include flex-item(1,1,250px);
-        }
-        div.flex-img-vert{
-            @include flex-item(1,1,150px);
-        }
+
         p {
             @include flex-item(1,1,150px);
         }
