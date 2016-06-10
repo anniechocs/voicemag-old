@@ -31,9 +31,9 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 					<main id="main" class="site-main" role="main">
 	
 
-			<?php get_template_part( 'template-parts/homepages/content', 'moreposts' );
+			<?php   get_template_part( 'template-parts/homepages/content', 'moreposts' );
 				echo "\n\n"; ?>
-				
+
 					</main>
 				</div>
 <?php get_sidebar('right'); ?> 

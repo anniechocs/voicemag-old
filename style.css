@@ -363,7 +363,8 @@ img {
   -webkit-box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 5px -4px rgba(0, 0, 0, 0.2);
-  margin: 10px;
+  margin: 10px auto;
+  max-width: 650px;
   float: left; }
   .horiz-card h2, .horiz-card h3 {
     color: #678234;
@@ -381,11 +382,17 @@ img {
     width: 200px;
     margin: auto;
     float: left; }
+    @media (min-width: 480px) {
+      .horiz-card .card-left {
+        width: calc(50% - 10px); } }
     @media (min-width: 600px) {
       .horiz-card .card-left {
         width: calc(33% - 10px); } }
   .horiz-card .card-right {
     float: right; }
+    @media (min-width: 480px) {
+      .horiz-card .card-right {
+        width: calc(50% - 10px); } }
     @media (min-width: 600px) {
       .horiz-card .card-right {
         width: calc(66% - 10px); } }
@@ -398,7 +405,7 @@ img {
 
 /* FRONT PAGE TOP ROW WITH FEATURE CARDS */
 .feature-row {
-  padding: 20px 40px;
+  padding: 0 40px;
   margin-bottom: 20px; }
 
 .home-page-header {
@@ -429,18 +436,30 @@ img {
   z-index: 2;
   width: 100%;
   padding: 0 10px;
-  backface-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   background-color: transparent;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
   background: -webkit-linear-gradient(top, transparent, black);
   background: linear-gradient(to bottom, transparent, black); }
   .feature-title h2 {
     color: #f8f8f8;
-    font-size: 1.6rem;
-    margin-bottom: 10px; }
+    font-size: 1.6rem; }
+    @media (min-width: 992px) {
+      .feature-title h2 {
+        margin-bottom: 10px;
+        font-size: 1.6em;
+        padding-top: 20px; } }
   .feature-title:hover {
     text-decoration: none;
     color: white; }
+
+/***  POSTS ON PAGES ***/
+.card-head .category {
+  color: black;
+  max-width: 300px;
+  background-color: #ced54b;
+  margin: 0;
+  padding: 10px; }
 
 /************* LISTS ****************/
 /* DEFINITION LISTS */
@@ -528,6 +547,7 @@ nav.navbar-default {
 nav.navbar-default {
   margin-bottom: 0; }
 nav .navbar-collapse {
+  background-color: transparent;
   padding: 0;
   border-radius: 4px; }
   nav .navbar-collapse ul.navbar-nav {
@@ -538,16 +558,16 @@ nav .navbar-collapse {
       padding: 15px 15px 8px 15px;
       border-bottom: 7px solid transparent; }
     nav .navbar-collapse ul.navbar-nav li > a:hover, nav .navbar-collapse ul.navbar-nav li > a:focus {
-      border-bottom: 7px solid #ced54b; }
+      border-bottom: 7px solid #8db147; }
 nav #menu-primary.navbar-nav LI.active A {
   background-image: none;
   background-color: white;
-  border-bottom: 7px solid #8db147; }
+  border-bottom: 7px solid #ced54b; }
 nav .navbar-default .navbar-nav > .active > a,
 nav .navbar-default .navbar-nav > .open > a {
   background-image: none;
   background-color: white;
-  border-bottom: 7px solid #8db147; }
+  border-bottom: 7px solid #ced54b; }
 nav .navbar-header {
   background-color: #678234;
   border-radius: 4px; }

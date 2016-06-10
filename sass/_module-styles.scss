@@ -212,7 +212,8 @@ img {
     @include single-note-mixin;
     @include clearfix;
     @include box-shadow($args5);
-    margin: 10px;
+    margin: 10px auto;
+    max-width: 650px;
 //    @media (min-width: 600px) { 
 //        width: 45%;
 //        width: calc(50% - 20px);
@@ -222,15 +223,28 @@ img {
         width: 200px;
         margin: auto;
         float: left;
-     @media (min-width: 600px) { 
+     @media (min-width: $screen-xs-min) { 
+        width: calc(50% - 10px);
+        }
+    @media (min-width: 600px) { 
         width: calc(33% - 10px);
-        }       
+        }    
+//     @media (min-width: $screen-lg-min) { 
+//        width: calc(25% - 10px);
+//        }            
+        
     }
     .card-right{
         float: right;
-     @media (min-width: 600px) { 
+     @media (min-width: $screen-xs-min) { 
+        width: calc(50% - 10px);
+        } 
+        @media (min-width: 600px) { 
         width: calc(66% - 10px);
-        }       
+        }  
+//        @media (min-width: $screen-lg-min) { 
+//        width: calc(75% - 10px);
+//        }   
     }
     h3 .horiz-event-date {
         font-size: 1.2rem;
@@ -244,7 +258,7 @@ img {
 /* FRONT PAGE TOP ROW WITH FEATURE CARDS */
 
 .feature-row{
-    padding: 20px 40px;
+    padding: 0 40px;
     margin-bottom: 20px;
 }
 
@@ -278,12 +292,17 @@ img {
     z-index: 2;
     width: 100%;
     padding: 0 10px;
-    backface-color: black;
+    background-color: rgba(0,0,0,0.5);
     @include gradient(transparent, black);
     h2 {
         color: $vltgrey;
         font-size: 1.6rem;
+
+    @media (min-width: $screen-md-min ) { 
         margin-bottom: 10px;
+        font-size: 1.6em;
+        padding-top: 20px;
+        } 
     }
     &:hover {
         text-decoration: none;
@@ -291,6 +310,16 @@ img {
     }
 }
 
+/***  POSTS ON PAGES ***/
+
+.card-head .category {
+   color: black;
+    max-width: 300px;
+    background-color: $contr-col;
+    margin: 0;
+   // padding: 5px 10px;
+    padding: 10px;
+}
 
 /************* LISTS ****************/
 

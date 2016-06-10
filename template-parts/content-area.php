@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1 class="entry-title">What's On <?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -10,7 +10,8 @@
 
 			<?php get_template_part( 'template-parts/homepages/content', 'homeposts' );
 				echo "\n\n"; ?>
-
+			<?php get_template_part( 'template-parts/homepages/content', 'featureposts' );
+				echo "\n\n"; ?>
 
 		<div class="clearfix"></div>
 		<?php
