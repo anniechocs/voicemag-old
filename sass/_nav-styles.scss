@@ -93,6 +93,7 @@ nav {
         margin-bottom: 0;
     }
     .navbar-collapse {
+        background-color:transparent;
         padding: 0; // default: 0 15px
         border-radius: 4px;
             ul.navbar-nav{
@@ -105,7 +106,7 @@ nav {
                     border-bottom: 7px solid transparent; 
                     }
                 > a:hover, > a:focus {
-                    border-bottom: 7px solid $contr-col;
+                    border-bottom: 7px solid $base-md;
         }
                 }
         }
@@ -116,14 +117,14 @@ nav {
     {
         background-image: none;
         background-color: white;
-        border-bottom: 7px solid $base-md;
+        border-bottom: 7px solid $contr-col;
     }
 
     .navbar-default .navbar-nav > .active > a, 
     .navbar-default .navbar-nav > .open > a {
         background-image: none;
         background-color: white;
-        border-bottom: 7px solid $base-md;
+        border-bottom: 7px solid $contr-col;
     }
     
     .navbar-header{

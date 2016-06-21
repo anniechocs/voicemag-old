@@ -73,25 +73,26 @@
 
 
 h4.event-datetime{
-//   color: white; 
+   color: white; 
     max-width: 300px;
-//    background-color: $base-col;
-    border-top: solid 2px $base-md;
-    border-bottom: solid 2px $base-md;
+    background-color: $base-col;
+//    border-top: solid 2px $base-md;
+//    border-bottom: solid 2px $base-md;
     margin: 0;
-    padding: 5px 10px;
+   // padding: 5px 10px;
+    padding: 10px;
 }
 
-.em-card{
-    .card-head a{
-        display: inline-block;
-        min-height: 5rem;
-        h3{
-            margin-bottom: 3px;
-            font-size: 1.5rem;
-        }
-    }
-}
+//.em-card{
+//    .card-head a{
+//        display: inline-block;
+//        min-height: 5rem;
+//        h3{
+//            margin-bottom: 3px;
+//            font-size: 1.5rem;
+//        }
+//    }
+//}
 
 table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
 	color: $base-md;
